@@ -4,8 +4,6 @@ function App() {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef();
 
-  console.log('レンダリングされました');
-
   const toggleVideo = () => {
     if(playing) {
       videoRef.current.pause();
@@ -17,7 +15,6 @@ function App() {
 
   const updateUseRef = () => {
     videoRef.current.classList.toggle('hoge');
-    console.log('useRefを更新しました。')
   }
 
   return (
